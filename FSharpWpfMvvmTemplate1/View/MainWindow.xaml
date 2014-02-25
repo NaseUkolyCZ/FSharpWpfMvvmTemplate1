@@ -1,0 +1,21 @@
+﻿<mui:ModernWindow x:Class="WpfMvvmTemplate.View.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:uc="clr-namespace:WpfMvvmTemplate.View" 
+        xmlns:mui="http://firstfloorsoftware.com/ModernUI"
+        Title="ExpenseIt" Height="450" Width="500"
+                  ContentSource="/ExpenseItHome.xaml"
+                  >
+
+    <mui:ModernWindow.MenuLinkGroups>
+        <mui:LinkGroup DisplayName="group 1" >
+            <mui:LinkGroup.Links>
+                <mui:Link DisplayName="link 1" Source="/ExpenseItHome.xaml" />
+                <mui:Link DisplayName="link 2" />
+                <mui:Link DisplayName="link 3" />
+            </mui:LinkGroup.Links>
+        </mui:LinkGroup>
+        
+    </mui:ModernWindow.MenuLinkGroups>
+    
+    <uc:ExpenseItHome/>
+</mui:ModernWindow>
